@@ -9,7 +9,6 @@ const initialState = {
 }
 
 export const fetchEvents = createAsyncThunk("events/fetchEvents", async () => { 
-  console.log(BASE_URL)
   const response = await axios.get(`${BASE_URL}/events`)
     return response.data.events
 })

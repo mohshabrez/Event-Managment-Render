@@ -1,1 +1,1 @@
-export const BASE_URL = process.env.BASE_URL
+export const BASE_URL = "https://event-management-bnpj.onrender.com/api/v1"
