@@ -21,6 +21,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+app.get("/", async (req, res) => {
+    res.send("Hello Event");
+  });
 
 app.use("/api/v1", eventRouter);
 app.use("/api/v1", volunteerRouter);
